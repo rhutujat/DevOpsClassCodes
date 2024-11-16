@@ -426,13 +426,14 @@
                                 <format>html</format>
                                 <format>xml</format>
                             </formats>
-				<reportSets>
-           <reportSet>
-               <reports>
-                   <report>cobertura</report>
-               </reports>
-           </reportSet>
-       </reportSets>
+				<executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>cobertura</goal>
+                        </goals>
+                    </execution>
+                </executions>
                         </configuration>
                     </plugin>
                     <plugin>
